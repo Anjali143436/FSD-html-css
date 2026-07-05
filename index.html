@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro to HTML</title>
+    <!-- internal css -->
+    <style>
+        /* tag selector */
+        /* h2{
+    color: red;
+}
+p{
+    color: blueviolet;
+}
+/* id selector */
+        #head-2 {
+            color: aqua;
+            font-size: 50px
+        }
+
+        /* class selector */
+        .theme-font {
+            color: green;
+            text-align: center;
+        }
+
+        */
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- heading tags -->
-    <h1>heading1</h1>
+    <!-- heading tags -->
+    <!-- //inline css-add-style attribute-->
+    <h1 style="color: brown">heading1</h1>
     <h2>heading2</h2>
-    <h3>heading3</h3>
+    <h2 id="head-2">heading2</h2>
+
+    <h3 class="theme-font">heading3</h3>
     <h4>heading4</h4>
     <h5>heading5</h5>
     <h6>heading6</h6>
 
     <p>
-        lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+        lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quisquam, quod.
     </p>
     <!--unpaired tags-->
 
-    <img src="bird-8788491_1280 (1).jpg"/>
+    <img src="bird-8788491_1280 (1).jpg" />
 
     <!--pair of tags-->
 
@@ -37,7 +67,7 @@
         <li>linux</li>
         <li>windows</li>
     </ol>
-   <!-- unordered list-->
+    <!-- unordered list-->
     <ul type="square">
         <li>dell</li>
         <li>acer</li>
@@ -51,31 +81,66 @@
         <dd>Macbook</dd>
         <dd>Lenovo</dd>
 
-     </dl>
+    </dl>
     <!--rows,columns,table-->
-     <table border="1">
+    <table border="1">
         <tr>
             <th colspan="2">head 1</th>
-            
-            
+
+
         </tr>
         <tr>
             <td>row1,col1</td>
             <td rowspan="2">row1,col2</td>
         </tr>
-<tr>
-    <td>row2,col1</td>
-    <td></td>
-</tr>
-    
+        <tr>
+            <td>row2,col1</td>
+            <td></td>
+        </tr>
 
-     </table>
-     <!-- semantic tags -->
 
-     <section>
-         <article></article>
-     </section>
-     <nav>
-         <a href=""></a>
+    </table>
+    <!-- semantic tags -->
+
+    <section>
+    </section>
+    <nav>
+    </nav>
+    <aside></aside>
+    <article>
+
+    </article>
+    </br>
+    <hr>
+</br>
+    <form>
+        <label>
+            Name :
+        </label>
+<input id="name" type="text" placeholder="enter your name" required/>
+<label>
+    password :
+</label>
+<input id="password" type="password" placeholder="enter your password" required/>
+<input type="radio" name="gender" value="female"/>
+<label for="mail">
+    female 
+</label>
+<input type="radio" name="gender" value="male"/>
+<label>
+    male 
+</label>
+<label>
+    email :
+</label>
+<input id="email" type="email" placeholder="enter your email"/>
+<label>
+    please accept :
+</label>
+<input type="checkbox" value="">
+<button disabled>Register now</button>
+    </form>
+</br>
 </body>
+
 </html>

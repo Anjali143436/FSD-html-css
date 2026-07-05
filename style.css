@@ -1,0 +1,23 @@
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: red;
+}
+
+p {
+    color: blueviolet;
+}
+
+/* id selector */
+#head-2 {
+    color: aqua;
+    font-size: 50px
+}
+
+/* class selector */
+.theme-font {
+    color: green;
+    text-align: center;
+}
