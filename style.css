@@ -21,3 +21,25 @@ p {
     color: green;
     text-align: center;
 }
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+h3 {
+     font-family: "Unbounded", sans-serif;
+     font-weight: 700;
+     
+    }
+.card{
+    border: 1px solid black;
+    /* padding: 15px; */
+    /* padding-left: 30px; */
+    padding: 20px 25px 20px 30px;
+    margin: 15px;
+    width: 300px; 
+    border-radius: 20px;
+    background-color: #f2f2f2;
+}
+
+ 
