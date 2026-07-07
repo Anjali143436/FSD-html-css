@@ -42,4 +42,85 @@ h3 {
     background-color: #f2f2f2;
 }
 
- 
+/* css-positioning */
+
+.parent {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-color: #1d1b1b;
+}
+
+.child1 { 
+    width: 100px;  
+    height: 100px;
+    background-color: rgb(184, 172, 14);
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        /* right: 10px; */
+
+    /* margin-left: 400px; */
+}
+
+.child2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(37, 187, 7);
+    position: absolute;
+        z-index: 1;
+        bottom: 0;
+
+    /* top: 50px; */
+    /* right: 10px; */
+}
+
+/* flexbox */
+
+.home {
+    display: flex;
+    background-color: aqua;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+}
+
+.card1{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+}
+.card2{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(153, 0, 255);
+}
+.card3{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 153, 0);
+}
+
+/*navigation*/
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    nav{
+        a{
+            text-decoration: none;
+            color: rgb(170, 24, 114);
+            padding: 10px;
+            /* display:block; */
+            transition: 0.5s;
+            &:hover{
+                background-color: rgb(158, 201, 79);
+                color: rgb(12, 19, 0);
+                border-radius: 10px;
+            }
+        }
+    }
+    
+}
